@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Homebanner from '../components/Homebanner'
+import HomeProducts from '../components/HomeProducts'
 export default function Home() {
   return (
     <div>
@@ -14,6 +15,7 @@ export default function Home() {
         <Homebanner />
         {/* feature section */}
         {/* home products */}
+        <HomeProducts />
         {/* offer section */}
         {/* summery */}
       </main>

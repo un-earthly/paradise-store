@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 export default function Navbar({ children }) {
     const menu = <>
         <li className='font-semibold'><Link href='/'>Home</Link></li>
@@ -8,12 +9,13 @@ export default function Navbar({ children }) {
         <li className='font-semibold'><Link href='/products'>Products</Link></li>
         <li className='font-semibold'><Link href='/contact'>Cotnact</Link></li>
         <li className='font-semibold'><Link href='/login'>Login</Link></li>
+        <li className='font-semibold text-white'><AiOutlineShoppingCart /></li>
     </>
     return (
-        <div className="drawer bg-center bg-black/60 bg-blend-multiply bg-[url('https://images.unsplash.com/photo-1552819401-700b5e342b9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')]">
+        <div className="drawer bg-center bg-black/60 bg-blend-multiply">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
-                <div className="w-full navbar duration-300 sticky -top-3 z-50" >
+                <div className="w-full navbar duration-300 sticky bg-neutral -top-3 z-50" >
                     <div className="flex-none lg:hidden">
                         <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
