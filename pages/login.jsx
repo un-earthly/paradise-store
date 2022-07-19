@@ -5,8 +5,6 @@ export default function Login() {
         e.preventDefault()
     }
     return (
-        <div>
-
 
             <section className="bg-base-100 py-20 lg:py-[120px]">
                 <div className="container">
@@ -96,7 +94,5 @@ export default function Login() {
                 </div>
             </section>
 
-
-        </div>
     )
 }
