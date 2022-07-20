@@ -9,10 +9,8 @@ export default function Navbar({ children }) {
         <div className="dropdown dropdown-end">
             <label tabIndex="0" className="btn btn-ghost rounded-btn">Products</label>
             <ul tabIndex="0" className="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-                <li><Link href='/tshirts'>T Shirts</Link></li>
-                <li><Link href='/mugs'>Mugs</Link></li>
-                <li><Link href='/hoodies'>Hoodies</Link></li>
-                <li><Link href='/stickers'>Stickers</Link></li>
+                <li><Link href='/mens-collection'>Mens Collection</Link></li>
+                <li><Link href='/womens-collection'>Womens Collection</Link></li>
             </ul>
         </div>
         <li className='font-semibold'><Link href='/contact'>Contact</Link></li>
